@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVerse | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">CV</span>
+          <div>
+            <strong>CineVerse</strong>
+            <span>AI movie portfolio</span>
+          </div>
+        </a>
+
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="#featured" data-i18n="nav.home">Home</a>
+          <a href="#premieres" data-i18n="nav.new">New</a>
+          <a href="#collections" data-i18n="nav.collections">Collections</a>
+          <a href="#catalog" data-i18n="nav.movies">Movies</a>
+        </nav>
+
+        <div class="language-switcher" aria-label="Language switcher">
+          <button class="language-switcher__button is-active" type="button" data-lang="en">EN</button>
+          <button class="language-switcher__button" type="button" data-lang="uk">UKR</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="featured">
+          <div class="hero__backdrop"></div>
+          <div class="hero__content">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Study project + portfolio</p>
+            <h1 data-i18n="hero.title">Platform for watching movies and AI videos</h1>
+            <p class="hero__text" data-i18n="hero.text">
+              The homepage is designed like a movie portal with a big banner, collections,
+              cards, and a quick jump to the watch page.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="movie.html?id=project-end" data-i18n="hero.open">Open movie</a>
+              <a class="button button--ghost" href="#catalog" data-i18n="hero.catalog">Go to catalog</a>
+            </div>
+          </div>
+
+          <aside class="hero__spotlight">
+            <span class="hero__badge" data-i18n="spotlight.badge">Premiere</span>
+            <h2 data-i18n="spotlight.title">Project "The End of the World"</h2>
+            <p data-i18n="spotlight.text">
+              Demo movie card: after a click the teacher goes to a separate page with a video
+              player and project description.
+            </p>
+            <ul class="meta-list">
+              <li>2026</li>
+              <li>SCI-FI</li>
+              <li data-i18n="meta.durationShort">90 min</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="carousel" id="premieres" aria-labelledby="premieres-title">
+          <div class="section-head">
+            <h2 id="premieres-title" data-i18n="premieres.title">New this week</h2>
+            <span data-i18n="premieres.text">Click any card to open the watch page</span>
+          </div>
+          <div class="movie-strip" id="premieres-strip"></div>
+        </section>
+
+        <section class="content-grid" id="catalog">
+          <aside class="sidebar">
+            <div class="panel">
+              <h3 data-i18n="sidebar.title">Navigation panel</h3>
+              <div class="sidebar-columns">
+                <div>
+                  <h4 data-i18n="sidebar.categories">Categories</h4>
+                  <ul class="link-list">
+                    <li><a href="#catalog" data-i18n="sidebar.allMovies">All movies</a></li>
+                    <li><a href="#catalog" data-i18n="sidebar.newReleases">New releases</a></li>
+                    <li><a href="#catalog" data-i18n="sidebar.scifi">Sci-fi</a></li>
+                    <li><a href="#catalog" data-i18n="sidebar.drama">Drama</a></li>
+                    <li><a href="#catalog" data-i18n="sidebar.animation">Animation</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 data-i18n="sidebar.years">Years</h4>
+                  <ul class="link-list">
+                    <li><a href="#catalog">2026</a></li>
+                    <li><a href="#catalog">2025</a></li>
+                    <li><a href="#catalog">2024</a></li>
+                    <li><a href="#catalog">2023</a></li>
+                    <li><a href="#catalog" data-i18n="sidebar.archive">Archive</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 data-i18n="sidebar.defenseTitle">For project defense</h3>
+              <p data-i18n="sidebar.defenseText">
+                The site already has a ready structure. To show your AI work, just replace the
+                video link in the <code>app.js</code> file.
+              </p>
+            </div>
+          </aside>
+
+          <section class="catalog" aria-labelledby="catalog-title">
+            <div class="section-head">
+              <h2 id="catalog-title" data-i18n="catalog.title">Movie catalog</h2>
+              <span data-i18n="catalog.text">Styled like a classic cinema portal, but polished for a portfolio</span>
+            </div>
+
+            <div class="featured-card" id="featured-card"></div>
+            <div class="movie-list" id="movie-list"></div>
+          </section>
+        </section>
+
+        <section class="collections" id="collections">
+          <div class="section-head">
+            <h2 data-i18n="collections.title">Collections</h2>
+            <span data-i18n="collections.text">Use these blocks for a lesson or presentation</span>
+          </div>
+          <div class="collection-grid">
+            <article class="collection-card collection-card--warm">
+              <h3 data-i18n="collection.aiTitle">AI short films</h3>
+              <p data-i18n="collection.aiText">A selection of short videos created with neural networks for study projects.</p>
+            </article>
+            <article class="collection-card collection-card--cool">
+              <h3 data-i18n="collection.portfolioTitle">Portfolio picks</h3>
+              <p data-i18n="collection.portfolioText">Best projects that are easy to present to a teacher or client.</p>
+            </article>
+            <article class="collection-card collection-card--gold">
+              <h3 data-i18n="collection.premiereTitle">Premiere hall</h3>
+              <p data-i18n="collection.premiereText">A highlighted block for the most important film in your defense.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app-fixed.js"></script>
+  </body>
+</html>
