@@ -137,7 +137,7 @@ const movies = [
       uk: "Астронавт Райленд Грейс прокидається на борту космічного корабля й розуміє, що його місія може вирішити долю людства. Ця картка вже оформлена для портфоліо й може вести на твоє власне AI-відео.",
     },
     posterGradient: "linear-gradient(180deg, #f59e0b 0%, #f97316 34%, #991b1b 100%)",
-    videoUrl: "file:///C:/Users/LoQ/AppData/Local/CapCut/Videos/0413.mp4",
+    videoUrl: "0413.mp4",
   },
   {
     id: "big-man",
