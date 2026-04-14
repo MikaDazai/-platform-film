@@ -199,11 +199,13 @@ function getMovieById(id) {
 
 function createPoster(movie, className = "poster") {
   const title = localizeMovieField(movie.title);
-  const posterImage = movie.posterImage ? `url("${movie.posterImage}")` : "none";
   const posterClass = `${className}${movie.posterImage ? " poster--image" : ""}`;
   const posterTitle = movie.posterImage ? "" : title.replace(/"/g, "&quot;");
+  const posterMedia = movie.posterImage
+    ? `<img class="poster__image" src="${movie.posterImage}" alt="${title}" loading="lazy" />`
+    : "";
 
-  return `<div class="${posterClass}" data-title="${posterTitle}" style="--poster-gradient: ${movie.posterGradient}; --poster-image: ${posterImage};"></div>`;
+  return `<div class="${posterClass}" data-title="${posterTitle}" style="--poster-gradient: ${movie.posterGradient};">${posterMedia}</div>`;
 }
 
 function createMiniCard(movie) {
