@@ -124,7 +124,7 @@ const translations = {
 const movies = [
   {
     id: "project-end",
-    title: { en: 'Project "The End of the World"', uk: 'Проєкт "Кінець світу"' },
+    title: { en: 'Redline: No Escape', uk: 'Redline: No Escape"' },
     year: "2026",
     genre: { en: "Sci-fi / Thriller", uk: "Фантастика / Трилер" },
     country: { en: "USA", uk: "США" },
@@ -133,11 +133,11 @@ const movies = [
     rating: "8.4",
     tagline: { en: "Main movie for your project defense", uk: "Головний фільм для захисту проєкту" },
     description: {
-      en: "Astronaut Ryland Grace wakes up aboard a spacecraft and realizes his mission may decide the fate of humanity. This card is already styled for a portfolio and can lead to your own AI video.",
-      uk: "Астронавт Райленд Грейс прокидається на борту космічного корабля й розуміє, що його місія може вирішити долю людства. Ця картка вже оформлена для портфоліо й може вести на твоє власне AI-відео.",
+      en: "A high-speed street racer takes on a deadly mountain challenge against elite drivers. What starts as a race for dominance quickly turns into a fight for survival. One wrong turn… and there's no way back",
+      uk: "Швидкісний вуличний гонщик бере участь у смертельному гірському випробуванні проти елітних водіїв. Те, що починається як гонка за домінування, швидко перетворюється на боротьбу за виживання. Один неправильний поворот… і шляху назад немає.",
     },
     posterGradient: "linear-gradient(180deg, #f59e0b 0%, #f97316 34%, #991b1b 100%)",
-    videoUrl: "file:///C:/Users/LoQ/AppData/Local/CapCut/Videos/0413.mp4",
+    videoUrl: "0413.mp4",
   },
   {
     id: "big-man",
