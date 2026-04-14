@@ -377,7 +377,13 @@ body::before {
   min-height: 340px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.3)),
+    var(--poster-image, none) center/cover no-repeat,
     var(--poster-gradient, linear-gradient(145deg, #475569, #0f172a));
+}
+
+.poster--image::after,
+.movie-card__poster.poster--image::after {
+  content: "";
 }
 
 .poster::before,
