@@ -162,7 +162,7 @@ const movies = [
     },
     posterGradient: "linear-gradient(180deg, #1e293b 0%, #111827 50%, #040507 100%)",
     posterImage: "assets/echoes-city-of-silence.png",
-    videoUrl: "",
+    videoUrl: "0415.mp4",
   },
 ];
 
